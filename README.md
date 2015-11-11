@@ -6,8 +6,8 @@
 
 ## Configuration
 
-    Edit `etc/front.json` so that it fits your need. Also copy (or rename) `etc/local.example.py` to `etc/local.py` and edit it.
-    Optionally edit `etc/nginx.conf` and `etc/uwsgi.ini`.
+Edit `etc/front.json` so that it fits your need. Also copy (or rename) `etc/local.example.py` to `etc/local.py` and edit it.
+Optionally edit `etc/nginx.conf` and `etc/uwsgi.ini`.
 
 ## Running Taiga
 
