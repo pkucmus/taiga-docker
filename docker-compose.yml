@@ -1,0 +1,21 @@
+db:
+    image: postgres:9.4
+    environment:
+        - POSTGRES_USER=taiga
+        - POSTGRES_PASSWORD=taiga
+
+back:
+    build: .
+    dockerfile: etc/back.Dockerfile
+    links:
+        - db:db
+
+front:
+    build: .
+    dockerfile: etc/front.Dockerfile
+    ports:
+        - "80:80"
+    links:
+        - back:back
+    volumes_from:
+        - back
